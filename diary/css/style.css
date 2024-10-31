@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 30px 0;
+    column-count: 4;
+    padding: 20px;
+}
+
+.container div{
+    break-inside: avoid ;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0);
+}
+
+.container div p{
+    padding: 10px 5px;
+}
+
+
+.container div img{
+    width:350px;
+}
+
+@media (max-width: 1000px){
+    .container{
+        column-count: 3;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px){
+    .container{
+        column-count: 1;
+    }
+}
